@@ -1,0 +1,127 @@
+.notes--container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+
+
+.new-note--container >div > *{
+   padding: 10px;
+   border-radius: 5px;
+   margin:  1rem 0;
+   border: 1px solid #e5e5e5;
+}
+
+.new-note--container >div > *:nth-last-child(1){
+    border:none;
+ }
+ 
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-container > button{
+ width: 100px;
+ padding: 10px;
+ cursor: pointer;
+}
+.pin{
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTE3IDR2N2wyIDN2MmgtNnY1bC0xIDEtMS0xdi01SDV2LTJsMi0zVjRjMC0xLjEuOS0yIDItMmg2YzEuMTEgMCAyIC44OSAyIDJ6TTkgNHY3Ljc1TDcuNSAxNGg5TDE1IDExLjc1VjRIOXoiLz4KPC9zdmc+Cg==)
+}
+
+.archive{
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+.close {
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.delete{
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+
+.unArchive{
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIj4KICA8cGF0aCBkPSJNMjAuNTQgNS4yM2wtMS4zOS0xLjY4QzE4Ljg4IDMuMjEgMTguNDcgMyAxOCAzSDZjLS40NyAwLS44OC4yMS0xLjE2LjU1TDMuNDYgNS4yM0MzLjE3IDUuNTcgMyA2LjAyIDMgNi41VjE5YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNi41YzAtLjQ4LS4xNy0uOTMtLjQ2LTEuMjd6TTYuMjQgNWgxMS41MmwuODMgMUg1LjQybC44Mi0xek01IDE5VjhoMTR2MTFINXptMy01LjVsNC00IDQgNC0xLjQxIDEuNDFMMTMgMTMuMzNWMTdoLTJ2LTMuNjdsLTEuNTkgMS41OUw4IDEzLjV6Ii8+Cjwvc3ZnPgo=);
+}
+.new-note--container >*{
+    width: 90%;
+    margin: 1rem;
+}
+
+#notExpandedCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#expandedCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.new-note--container >div > textarea{
+    max-height: 100px ;
+    outline: none;
+    font-size: 16px;
+}
+
+.new-note--container {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-height: 100px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin: 20px 0;
+    min-width: 200px;
+    flex: 1;
+    margin: 20px 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.notes-super-container {
+    padding: 10px 50px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 769px){
+    .notes-super-container{
+        margin: 0;
+        padding: 10px 0;
+    }
+  .notes--container{
+    padding: 0 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px){
+    .notes--container{
+        justify-content: center;
+    }
+}

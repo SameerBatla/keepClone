@@ -1,0 +1,31 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin-top: 1px;
+    background-color: #fff;
+    transition-duration: 0.2s;
+    text-align: left;
+}
+.sidebar.hidden {
+    transform: translateX(-1500px);
+}
+.sidebar>a {
+    /* margin: 20px auto; */
+    text-decoration: none;
+    padding: 30px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar > a:nth-last-child(1){
+    border-bottom: none;
+}
+
+@media screen and (max-width: 769px){
+    .sidebar{
+        position: absolute;
+        z-index: 100;
+        min-width: 45%!important;
+        box-shadow: 4px 4px 8px 0 #e5e5e5;
+    }
+   }
